@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wether App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <!-- search button link -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+</head>
+
+<body>
+    <main class="main-container">
+        <header class="input-container">
+            <input class="city-input" placeholder="Search city" type="text" />
+            <button class="search-btn">
+                <span class="material-symbols-outlined">
+                    <!--  search button-->
+                    search
+                </span>
+            </button>
+        </header>
+
+        <section class="weather-info" style="display: none">
+            <div class="location-date-container">
+                <div class="location">
+                    <h4 class="country-txt">new york</h4>
+                </div>
+
+                <h5 class="cureent-date-txt">wed,25 dec</h5>
+            </div>
+
+            <div class="weather-summary-container">
+                <img src="mist.png" alt="" class="weather-summary-icon" />
+
+                <div class="weather-summary-info">
+                    <h1 class="temp-txt">29 °C</h1>
+                    <h3 class="condition-txt">Clouds</h3>
+                </div>
+            </div>
+
+            <div class="weather-conditions-container">
+                <div class="condition-item">
+                    <img class="m1" src="clouds.png" />
+                    <div class="condition-info">
+                        <h5 class="regular-txt">humidity</h5>
+                        <h5 class="hummidity-value-txt">55%</h5>
+                    </div>
+                </div>
+
+                <div class="condition-item">
+                    <img class="m1" src="wind.png" />
+                    <div class="condition-info">
+                        <h5 class="regular-txt">Wind</h5>
+                        <h5 class="Wind-value-txt">2kms</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast-items-container">
+                <div class="forcast-item">
+                    <h5 class="forcast-item-date">24 Dec</h5>
+                    <img src="rain.png" class="forcast-item-img" />
+                    <h5 class="forcast-item-temp">18°C</h5>
+                </div>
+
+                <div class="forcast-item">
+                    <h5 class="forcast-item-date">23 Dec</h5>
+                    <img src="rain.png" class="forcast-item-img" />
+                    <h5 class="forcast-item-temp">15 °C</h5>
+                </div>
+
+                <div class="forcast-item">
+                    <h5 class="forcast-item-date">22 Dec</h5>
+                    <img src="rain.png" class="forcast-item-img" />
+                    <h5 class="forcast-item-temp">15 °C</h5>
+                </div>
+
+                <div class="forcast-item">
+                    <h5 class="forcast-item-date">21 Dec</h5>
+                    <img src="rain.png" class="forcast-item-img" />
+                    <h5 class="forcast-item-temp">30°C</h5>
+                </div>
+            </div>
+        </section>
+        <!-- Before search -->
+        <section class="search-city section-message">
+            <div>
+                <h1>Search City</h1>
+                <h4>Find out the weather condition of city</h4>
+            </div>
+        </section>
+
+
+        <section class="Not-Found section-message" style="display: none;">
+            <div>
+                <h1> City Not Found</h1>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
